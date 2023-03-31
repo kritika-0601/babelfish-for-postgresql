@@ -108,7 +108,7 @@ jobs:
           #------------------------------------------------------------------------------
           listen_addresses = '*'
           allow_system_table_mods = on
-          shared_preload_libraries = 'babelfishpg_tds'
+          shared_preload_libraries = 'babelfishpg_tds, pg_stat_statements'
           babelfishpg_tds.listen_addresses = '*'
           EOF
 
